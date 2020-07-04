@@ -1,0 +1,14 @@
+package com.pos.springdemo.dao;
+
+import java.util.List;
+
+import org.springframework.stereotype.Component;
+
+import com.pos.springdemo.entity.Customer;
+
+@Component
+public interface CustomerDAO {
+
+	public List<Customer> getCustomers();
+	
+}

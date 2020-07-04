@@ -1,0 +1,20 @@
+package com.pos.springdemo.dao;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.pos.entity.Customer;
+
+public class CustomerDAOImpl implements CustomerDAO {
+
+	@Autowired
+	private SessionFactory sessionFactory;
+	
+	@Override
+	public List<Customer> getCustomers() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
