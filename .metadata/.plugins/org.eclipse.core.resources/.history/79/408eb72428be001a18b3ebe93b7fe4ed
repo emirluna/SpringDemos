@@ -1,0 +1,20 @@
+package com.pos.springdemo.service;
+
+import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
+import com.pos.springdemo.dao.CustomerDAO;
+import com.pos.springdemo.entity.Customer;
+
+@Service
+public class CustomerServicImpl implements CustomerService {
+
+	@Autowired
+	private CustomerDAO customerDAO;
+	
+	@Override
+	public List<Customer> getCustomers() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

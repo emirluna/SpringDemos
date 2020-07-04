@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.pos.springdemo.dao.CustomerDAO;
 import com.pos.springdemo.entity.Customer;
 import com.pos.springdemo.service.CustomerService;
 
