@@ -15,10 +15,10 @@
 <td>Category Name</td>
 </tr>
 
-<c:forEach var="tempCategories" items="${categories}">
+<c:forEach var="tempCategory" items="${categories}">
 <tr>
-<td>${tempCategories.id}</td>
-<td>${tempCategories.name}</td>
+<td>${tempCategory.id}</td>
+<td>${tempCategory.name}</td>
 </tr>
 </c:forEach>
 
