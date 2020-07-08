@@ -35,7 +35,7 @@ public class Stock {
 	private int maxStock;
 
 	
-	@ManyToOne(fetch=FetchType.LAZY)
+	@ManyToOne(fetch=FetchType.EAGER)
 	@JoinColumn(name="id_product")
 	private Product products;
 	

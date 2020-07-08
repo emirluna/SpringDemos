@@ -1,5 +1,5 @@
 #Tomcat publish data
-#Sun Jul 05 00:16:06 CDT 2020
+#Wed Jul 08 02:06:02 CDT 2020
 org.eclipse.jst.jee.server\:/binary\:/Users/Emir21/workspace21/Pos_Test_32/WebContent/WEB-INF/lib/spring-web-5.2.0.RELEASE.jar=WEB-INF/lib/spring-web-5.2.0.RELEASE.jar
 org.eclipse.jst.jee.server\:/binary\:/Users/Emir21/workspace21/Pos_Test_32/WebContent/WEB-INF/lib/spring-web-5.2.0.RELEASE-sources.jar=WEB-INF/lib/spring-web-5.2.0.RELEASE-sources.jar
 org.eclipse.jst.jee.server\:/binary\:/Users/Emir21/workspace21/Pos_Test_41/WebContent/WEB-INF/lib/spring-web-5.2.0.RELEASE-sources.jar=WEB-INF/lib/spring-web-5.2.0.RELEASE-sources.jar

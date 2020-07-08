@@ -17,13 +17,13 @@
 			<td>Branches</td>
 		</tr>
 
-		<c:forEach var="tempEnterprises" items="${enterprises}">
+		<c:forEach var="tempBranches" items="${branches}">
 			<tr>
-				<td>${tempEnterprises.id}</td>
-				<td>${tempEnterprises.name}</td>
-				<td>${tempEnterprises.area}</td>
-				<td><a href="branches/${tempEnterprises.id}">See Branches</a></td>
-			</tr>
+				<td>${tempBranches.id}</td>
+				<td>${tempBranches.branchName}</td>
+				<!-- <td>${tempBranches.address}</td> -->
+				<td><a href="stocks/${tempBranches.id}">See Stocks</a></td>
+				</tr>
 		</c:forEach>
 
 

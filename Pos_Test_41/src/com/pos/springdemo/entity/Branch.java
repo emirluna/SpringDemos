@@ -40,7 +40,7 @@ public class Branch {
 	private Address address;
 	
 
-	@OneToMany(fetch= FetchType.EAGER,
+	@OneToMany(fetch= FetchType.LAZY,
 			mappedBy="branches",
 			cascade= CascadeType.ALL)
 	private List<Stock> stocks;
