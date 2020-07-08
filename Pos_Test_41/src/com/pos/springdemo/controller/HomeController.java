@@ -12,13 +12,23 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.pos.springdemo.entity.Branch;
 import com.pos.springdemo.entity.Enterprise;
 import com.pos.springdemo.entity.Stock;
+import com.pos.springdemo.service.BranchService;
 import com.pos.springdemo.service.EnterpriseService;
+import com.pos.springdemo.service.StockService;
 
 @Controller
 public class HomeController {
 
 	@Autowired
 	private EnterpriseService enterpriseService;
+	
+	@Autowired
+	private StockService stockService;
+	
+	@Autowired
+	private BranchService branchService;
+	
+	
 	
 	@RequestMapping("/list")
 	public String home(Model theModel) {
@@ -37,7 +47,7 @@ public class HomeController {
 	@GetMapping("/branches/{id}")
 	public String branch(@PathVariable("id") int id, Model theModel) {
 		
-		List<Branch> theBranches = enterpriseService.getBranches(id);
+		List<Branch> theBranches = branchService.getBranches(id);
 		
 		theModel.addAttribute("branches", theBranches);
 		
@@ -47,7 +57,7 @@ public class HomeController {
 	@GetMapping("/branches/stocks/{id}")
 	public String getStock(@PathVariable("id") int id, Model theModel) {
 		
-		List<Stock> theStocks = enterpriseService.getStocks(id);
+		List<Stock> theStocks = stockService.getStocks(id);
 		
 		theModel.addAttribute("stocks", theStocks);
 		
