@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
     <typeInfo handle="=Pos_Test_41/src&lt;com.pos.springdemo.service{CategoryService.java[CategoryService" modifiers="513" timestamp="1593924535000"/>
+    <typeInfo handle="=Pos_Test_41/src&lt;com.pos.springdemo.dao{EnterpriseDAO.java[EnterpriseDAO" modifiers="513" timestamp="1594196469000"/>
+    <typeInfo handle="=Pos_Test_41/src&lt;com.pos.springdemo.dao{StockDAO.java[StockDAO" modifiers="513" timestamp="1594196469000"/>
+    <typeInfo handle="=Pos_Test_41/\/Library\/Java\/JavaVirtualMachines\/jdk-12.0.2.jdk\/Contents\/Home\/lib\/jrt-fs.jar`jdk.internal.vm.compiler&lt;org.graalvm.compiler.lir(StandardOp$BranchOp.class[BranchOp" modifiers="1545" timestamp="1563240504000"/>
 </typeInfoHistroy>

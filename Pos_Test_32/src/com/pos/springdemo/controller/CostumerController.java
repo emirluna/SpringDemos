@@ -5,6 +5,10 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.pos.springdemo.entity.Customer;
@@ -28,4 +32,25 @@ public class CostumerController {
 		
 		return "list-customers";
 	}
+	
+	
+	@GetMapping("/showFormAdd")
+	public String showFormforAdd(Model theModel) {
+		
+		Customer theCustomer = new Customer();
+		
+		theModel.addAttribute("customer", theCustomer);
+		
+		return "customer-form";
+	}
+	
+	@PostMapping("/saveCustomer")		
+	public String saveCustomer(@ModelAttribute("customer") Customer newCustomer) {
+		
+		customerService.saveCustomer(newCustomer);
+		
+		return "redirect:/customer/list";
+	}
+	
+	
 }
