@@ -24,16 +24,7 @@ public class EnterpriseServiceImpl implements EnterpriseService {
 		return enterpriseDAO.getEnterprises();
 	}
 
-	@Override
-	@Transactional
-	public List<Branch> getBranches(int E) {
-		return enterpriseDAO.getBranches(E);
-	}
+	
 
-	@Override
-	@Transactional
-	public List<Stock> getStocks(int s) {
-		return enterpriseDAO.getStocks(s);
-	}
-
+	
 }

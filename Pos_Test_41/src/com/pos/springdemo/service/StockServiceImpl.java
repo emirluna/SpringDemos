@@ -7,19 +7,21 @@ import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.pos.springdemo.dao.CustomerDAO;
-import com.pos.springdemo.entity.Customer;
+import com.pos.springdemo.dao.StockDAO;
+import com.pos.springdemo.entity.Stock;
 
 @Service
-public class CustomerServicImpl implements CustomerService {
+public class StockServiceImpl implements StockService {
 
+	
 	@Autowired
-	private CustomerDAO customerDAO;
+	private StockDAO stockDAO;
 	
 	@Override
 	@Transactional
-	public List<Customer> getCustomers() {
-		return customerDAO.getCustomers();
+	public List<Stock> getStocks(int s) {
+		return stockDAO.getStocks(s);
 	}
+
 
 }
