@@ -25,7 +25,6 @@
     <fullyQualifiedTypeName name="javax.transaction.Transactional"/>
     <fullyQualifiedTypeName name="com.pos.springdemo.service.EnterpriseService"/>
     <fullyQualifiedTypeName name="com.pos.springdemo.entity.Enterprise"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
     <fullyQualifiedTypeName name="com.pos.springdemo.entity.Branch"/>
     <fullyQualifiedTypeName name="com.pos.springdemo.entity.Stock"/>
@@ -35,4 +34,7 @@
     <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
     <fullyQualifiedTypeName name="com.pos.springdemo.service.StockService"/>
     <fullyQualifiedTypeName name="com.pos.springdemo.service.BranchService"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ModelAttribute"/>
 </qualifiedTypeNameHistroy>
