@@ -24,6 +24,12 @@ public class EnterpriseServiceImpl implements EnterpriseService {
 		return enterpriseDAO.getEnterprises();
 	}
 
+	@Override
+	@Transactional
+	public void saveEnterprise(Enterprise E) {
+		enterpriseDAO.saveEnterprise(E);
+	}
+
 	
 
 	
