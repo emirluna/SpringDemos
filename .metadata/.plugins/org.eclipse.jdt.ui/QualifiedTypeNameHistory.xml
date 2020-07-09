@@ -23,7 +23,6 @@
     <fullyQualifiedTypeName name="org.hibernate.query.Query"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="javax.transaction.Transactional"/>
-    <fullyQualifiedTypeName name="com.pos.springdemo.service.EnterpriseService"/>
     <fullyQualifiedTypeName name="com.pos.springdemo.entity.Enterprise"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
     <fullyQualifiedTypeName name="com.pos.springdemo.entity.Branch"/>
@@ -37,4 +36,5 @@
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ModelAttribute"/>
+    <fullyQualifiedTypeName name="com.pos.springdemo.service.EnterpriseService"/>
 </qualifiedTypeNameHistroy>

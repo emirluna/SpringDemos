@@ -37,7 +37,7 @@ public class Enterprise {
 	@JoinColumn(name="id_address")
 	private Address address;
 	
-	@OneToMany(fetch= FetchType.LAZY,
+	@OneToMany(fetch= FetchType.EAGER,
 			mappedBy="enterprise",
 			cascade= CascadeType.ALL)
 	private List<Branch> branches;

@@ -24,17 +24,16 @@
 <div id="container">
 		<div id="content">
 
-			<input type="button" value="Add Customer"
-			onclick="window.location.href='showFormAdd'; return false;"
+			<input type="button" value="Add Branch"
+			onclick="window.location.href='showFormAdd/${enterpriseId}'; return false;"
 			class="add-button" />
-
+<!-- ${tempBranches.enterprise.id} -->
 
 	<table>
 		<tr>
 			<td>ID</td>
-			<td>Enterprise Name</td>
-			<td>Area</td>
-			<td>Branches</td>
+			<td>Branch Name</td>
+			<td>Stocks</td>
 		</tr>
 
 		<c:forEach var="tempBranches" items="${branches}">

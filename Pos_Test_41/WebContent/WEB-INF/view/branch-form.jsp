@@ -17,28 +17,21 @@
 
 	<div id="wrapper">
 		<div id="header">
-			<h2>CRM</h2>
+			<h2>New Branch</h2>
 		</div>
 	</div>
 
 
 	<div id="container">
-		<h3>Save Customer</h3>
-		<form:form action="saveCustomer" modelAttribute="customer"
+		<h3>Save Branch</h3>
+		<form:form action="${pageContext.request.contextPath}/branches/saveBranch/${id_enterprise}" modelAttribute="branch"
 			method="POST">
 			
 			<table>
 				<tr>
-					<td><label>First Name: </label></td>
-					<td><form:input path="firstName" /></td>
-				</tr>
-				<tr>
-					<td><label>Last Name: </label></td>
-					<td><form:input path="lastName" /></td>
-				</tr>
-				<tr>
-					<td><label>email: </label></td>
-					<td><form:input path="email" /></td>
+					<td><label>Branch Name: </label></td>
+					<td><form:input path="branchName" /></td>
+					
 				</tr>
 				<tr>
 					<td><label></label></td>

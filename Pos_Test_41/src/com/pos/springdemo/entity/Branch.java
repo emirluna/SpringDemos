@@ -31,7 +31,7 @@ public class Branch {
 	@Column(name="name")
 	private String BranchName;
 
-	@ManyToOne
+	@ManyToOne(cascade=CascadeType.ALL)
 	@JoinColumn(name="id_enterprise")
 	private Enterprise enterprise;
 	

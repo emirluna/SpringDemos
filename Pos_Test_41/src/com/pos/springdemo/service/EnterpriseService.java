@@ -10,4 +10,6 @@ public interface EnterpriseService {
 
 	public List<Enterprise> getEnterprises();
 	public void saveEnterprise(Enterprise E);
+	public Enterprise getEnterprise(int id);
+	public void updateEnterprise(Enterprise E);
 }

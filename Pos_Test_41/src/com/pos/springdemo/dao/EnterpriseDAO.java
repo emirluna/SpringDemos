@@ -8,4 +8,6 @@ public interface EnterpriseDAO {
 
 	public List<Enterprise> getEnterprises();
 	public void saveEnterprise(Enterprise E);
+	public Enterprise getEnterprise(int id);
+	public void updateEnterprice(Enterprise E);
 }

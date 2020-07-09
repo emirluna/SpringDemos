@@ -29,4 +29,20 @@ public class BranchDAOImpl implements BranchDAO {
 		return branches;
 	}
 
+
+	@Override
+	public void saveBranch(Branch B) {
+		Session currentSession = sessionFactory.getCurrentSession(); 
+		
+		currentSession.save(B);
+	}
+
 }
+
+
+
+
+
+
+
+

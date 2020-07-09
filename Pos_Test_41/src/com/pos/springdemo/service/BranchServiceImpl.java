@@ -22,4 +22,10 @@ public class BranchServiceImpl implements BranchService {
 		return branchDAO.getBranches(E);
 	}
 
+	@Override
+	@Transactional
+	public void saveBranch(Branch B) {
+		branchDAO.saveBranch(B);
+	}
+
 }

@@ -44,6 +44,23 @@ public class EnterpriseDAOImpl implements EnterpriseDAO {
 	}
 
 
+	@Override
+	public Enterprise getEnterprise(int id) {
+		
+		Session currentSession = sessionFactory.getCurrentSession(); 
+		
+		return currentSession.get(Enterprise.class, id);
+	}
+
+
+	@Override
+	public void updateEnterprice(Enterprise E) {
+		Session currentSession = sessionFactory.getCurrentSession(); 
+		
+		currentSession.saveOrUpdate(E);
+	}
+
+
 	
 	
 }
