@@ -5,10 +5,31 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>DashBoard</title>
+<title>POS - Point Of Sales</title>
+
+<link type="text/css"
+	  rel="stylesheet" 
+	  href="${pageContext.request.contextPath}/resources/css/style.css" >
+
 </head>
 <body>
+<div id="wrapper">
+		<div id="header">
 
+			<h2>List of Branches</h2>
+
+		</div>
+	</div>
+
+<div id="container">
+		<div id="content">
+
+			<input type="button" value="Add Customer"
+			onclick="window.location.href='showFormAdd'; return false;"
+			class="add-button" />
+
+
+	
 	<table>
 		<tr>
 			<td>ID</td>
@@ -38,6 +59,8 @@
 
 	</table>
 
+	</div>
+</div>
 
 </body>
 </html>
