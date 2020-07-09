@@ -7,5 +7,5 @@ import com.pos.springdemo.entity.Enterprise;
 public interface EnterpriseDAO {
 
 	public List<Enterprise> getEnterprises();
-	
+	public void saveEnterprise(Enterprise E);
 }

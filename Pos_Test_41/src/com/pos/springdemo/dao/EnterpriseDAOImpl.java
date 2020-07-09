@@ -35,6 +35,15 @@ public class EnterpriseDAOImpl implements EnterpriseDAO {
 	}
 
 
+	@Override
+	public void saveEnterprise(Enterprise E) {
+		
+		Session currentSession = sessionFactory.getCurrentSession(); 
+		
+		currentSession.save(E);
+	}
+
+
 	
 	
 }

@@ -42,14 +42,14 @@ public class HomeController {
 		
 		return "enterprise-form";
 	}
-	/*
-	@PostMapping("/saveCustomer")		
-	public String saveCustomer(@ModelAttribute("customer") Customer newCustomer) {
+	
+	@PostMapping("/saveEnterprise")		
+	public String saveEnterprise(@ModelAttribute("enterprise") Enterprise newEnterprise) {
 		
-		customerService.saveCustomer(newCustomer);
+		enterpriseService.saveEnterprise(newEnterprise);;
 		
-		return "redirect:/customer/list";
+		return "redirect:/list";
 	}
-	*/
+	
 
 }

@@ -9,5 +9,5 @@ import com.pos.springdemo.entity.Stock;
 public interface EnterpriseService {
 
 	public List<Enterprise> getEnterprises();
-	
+	public void saveEnterprise(Enterprise E);
 }
